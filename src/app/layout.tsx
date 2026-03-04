@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    creator: '@sauravsirsat',
+    creator: '@saurav-sirsat',
     images: [`${siteConfig.url}/images/metaimg.png`],
   },
-  authors: [{ name: 'Saurav Sirsat', url: 'https://github.com/sauravsirsat' }],
+  authors: [{ name: 'Saurav Sirsat', url: 'https://github.com/saurav-sirsat' }],
   creator: 'Saurav Sirsat',
   publisher: 'Saurav Sirsat',
 };

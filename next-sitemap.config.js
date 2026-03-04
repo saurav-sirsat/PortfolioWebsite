@@ -1,10 +1,10 @@
 module.exports = {
-  siteUrl: 'https://sauravsirsat.netlify.app',
+  siteUrl: 'https://saurav-sirsat.netlify.app',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
-    additionalSitemaps: ['https://sauravsirsat.netlify.app/sitemap.xml'],
+    additionalSitemaps: ['https://saurav-sirsat.netlify.app/sitemap.xml'],
   },
   // Additional paths for better indexing
   additionalPaths: async () => {

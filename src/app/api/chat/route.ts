@@ -48,7 +48,7 @@ Projects:
 - Multi-Tenant POS SaaS: Spring Boot/Hibernate, 60+ APIs, optimized SQL, Redis caching.
 - Financial Insights SaaS: Data pipelines with Spark, Dockerized services.
 
-Contact: saurav.sirsat@outlook.com | GitHub: sauravsirsat
+Contact: saurav.sirsat@outlook.com | GitHub: saurav-sirsat
 
 Guidelines:
 - Provide helpful, technical information about Saurav's work.

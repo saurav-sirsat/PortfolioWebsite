@@ -83,7 +83,7 @@ Node.js 18+
 npm or yarn
 
 Setup
-git clone https://github.com/sauravsirsat/portfolio.git
+git clone https://github.com/saurav-sirsat/portfolio.git
 cd portfolio
 npm install
 
@@ -176,8 +176,8 @@ Contact
 I'm currently open to Full-Time Backend / Full-Stack Developer opportunities (2025 Graduate).
 
 Email: saurav.sirsat@outlook.com  
-LinkedIn: https://linkedin.com/in/sauravsirsat  
-GitHub: https://github.com/sauravsirsat
+LinkedIn: https://linkedin.com/in/saurav-sirsat  
+GitHub: https://github.com/saurav-sirsat
 
 ---
 

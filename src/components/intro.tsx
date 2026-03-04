@@ -204,7 +204,7 @@ export const Intro = () => {
               </div>
             </Link>
             <Link
-              href="https://github.com/sauravsirsat"
+              href="https://github.com/saurav-sirsat"
               target="_blank"
               className="group transition-transform hover:-translate-y-1"
             >

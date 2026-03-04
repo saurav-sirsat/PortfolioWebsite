@@ -22,7 +22,7 @@ export const siteConfig = {
     'Apache Spark',
     'ETL Pipelines',
   ],
-  url: 'https://sauravsirsat.netlify.app',
+  url: 'https://saurav-sirsat.netlify.app',
   googleSiteVerificationId: '',
   // Supported locales for international SEO
   locales: [

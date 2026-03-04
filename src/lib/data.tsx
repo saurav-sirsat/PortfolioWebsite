@@ -47,8 +47,8 @@ export const projectsData = [
       'Hibernate'
     ],
     links: {
-      preview: 'https://github.com/sauravsirsat',
-      github: 'https://github.com/sauravsirsat',
+      preview: 'https://github.com/saurav-sirsat',
+      github: 'https://github.com/saurav-sirsat',
       githubApi: '',
     },
   },
@@ -68,8 +68,8 @@ export const projectsData = [
       'ETL Pipelines'
     ],
     links: {
-      preview: 'https://github.com/sauravsirsat',
-      github: 'https://github.com/sauravsirsat',
+      preview: 'https://github.com/saurav-sirsat',
+      github: 'https://github.com/saurav-sirsat',
       githubApi: '',
     },
   },
