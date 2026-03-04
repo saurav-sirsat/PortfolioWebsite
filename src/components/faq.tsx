@@ -3,8 +3,6 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 
-import { generateFAQStructuredData } from '@/lib/aeo';
-
 import { Icons } from './icons';
 
 interface FAQItem {
@@ -54,19 +52,8 @@ export function FAQ({ items }: FAQProps) {
     );
   };
 
-  // AEO-optimized FAQ structured data for AI search engines and voice assistants
-  const faqStructuredData = generateFAQStructuredData(faqItems);
-
   return (
     <section className="py-16">
-      {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(faqStructuredData),
-        }}
-      />
-
       <div className="container mx-auto px-4">
         <div className="mb-10 text-center">
           <h2 className="font-heading mb-4 text-3xl font-semibold">

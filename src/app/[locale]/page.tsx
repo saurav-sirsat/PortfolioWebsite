@@ -12,22 +12,10 @@ import { Projects } from '@/components/projects';
 import { SectionDivider } from '@/components/section-divider';
 import { Testimonials } from '@/components/testimonials';
 import { ThemeToggle } from '@/components/theme-toggle';
-import { generateQAPageStructuredData } from '@/lib/aeo';
 
 const HomePage = async () => {
-  // AEO: QAPage schema for chat/QA functionality
-  const qaPageStructuredData = generateQAPageStructuredData();
-
   return (
     <>
-      {/* AEO: QAPage structured data for AI-powered question answering */}
-      <Script
-        id="qa-page-schema"
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(qaPageStructuredData),
-        }}
-      />
       <main id="main-content" className="container flex flex-col items-center">
         <Header />
         <Intro />

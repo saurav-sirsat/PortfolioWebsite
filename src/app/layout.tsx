@@ -2,10 +2,8 @@ import '@/styles/globals.css';
 
 import { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import Script from 'next/script';
 
 import { env } from '@/env.mjs';
-import { generateAEOStructuredData } from '@/lib/aeo';
 import { fonts } from '@/lib/fonts';
 import { siteConfig } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
@@ -33,13 +31,13 @@ export const metadata: Metadata = {
     url: siteConfig.url,
     title: siteConfig.title,
     description: siteConfig.description,
-    siteName: 'Yash Kapure Portfolio',
+    siteName: 'Saurav Sirsat Portfolio',
     images: [
       {
         url: `${siteConfig.url}/images/metaimg.png`,
         width: 1200,
         height: 630,
-        alt: 'Yash Kapure - Full Stack Developer',
+        alt: 'Saurav Sirsat - Software Developer & Backend Engineer',
       },
     ],
   },
@@ -47,21 +45,17 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: siteConfig.title,
     description: siteConfig.description,
-    creator: '@KapureYash',
+    creator: '@sauravsirsat',
     images: [`${siteConfig.url}/images/metaimg.png`],
   },
-  authors: [{ name: 'Yash Kapure', url: 'https://github.com/Yashkapure06' }],
-  creator: 'Yash Kapure',
-  publisher: 'Yash Kapure',
+  authors: [{ name: 'Saurav Sirsat', url: 'https://github.com/sauravsirsat' }],
+  creator: 'Saurav Sirsat',
+  publisher: 'Saurav Sirsat',
 };
 
 // Root layout with required html/body tags
 // The [locale] layout will handle locale-specific content
 export default function RootLayout({ children }: { children: ReactNode }) {
-  // AEO (Answer Engine Optimization) Structured Data
-  // Combines SEO with AI/voice search optimization for comprehensive visibility
-  const aeoStructuredData = generateAEOStructuredData();
-
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
@@ -77,43 +71,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <link rel="alternate" hrefLang="zh" href={siteConfig.url} />
         <link rel="alternate" hrefLang="ja" href={siteConfig.url} />
         <link rel="alternate" hrefLang="x-default" href={siteConfig.url} />
-        {/* Google Tag Manager */}
-        <Script
-          id="gtm-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','${env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}');
-            `,
-          }}
-        />
-        {/* Google AdSense */}
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${env.NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT_ID}`}
-          crossOrigin="anonymous"
-        />
-        {/* AEO Structured Data - Optimized for AI search engines and voice assistants */}
-        {aeoStructuredData.map((schema, index) => (
-          <script
-            key={`aeo-schema-${index}`}
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify(schema),
-            }}
-          />
-        ))}
-        {/* Preload critical resources */}
+          {/* Preload critical resources */}
         <link rel="preload" href="/images/profile.jpg" as="image" />
-        <link
-          rel="preload"
-          href="/_next/static/css/app/layout.css"
-          as="style"
-        />
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//github.com" />
         <link rel="dns-prefetch" href="//linkedin.com" />
@@ -125,29 +84,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to content
         </a>
-        {/* Google Tag Manager (noscript) */}
-        <noscript>
-          <iframe
-            src={`https://www.googletagmanager.com/ns.html?id=${env.NEXT_PUBLIC_GOOGLE_TAG_MANAGER_ID}`}
-            height="0"
-            width="0"
-            style={{ display: 'none', visibility: 'hidden' }}
-          />
-        </noscript>
-        {/* Microsoft Clarity */}
-        <Script
-          id="clarity-script"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-              })(window, document, "clarity", "script", "${env.NEXT_PUBLIC_MICROSOFT_CLARITY_ID}");
-            `,
-          }}
-        />
         {children}
       </body>
     </html>

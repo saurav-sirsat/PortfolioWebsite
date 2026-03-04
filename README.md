@@ -1,99 +1,184 @@
-## 🚀 Yash Kapure | Full-Stack Portfolio
+Saurav Sirsat — Portfolio
 
-High-performance personal portfolio built with Next.js, Tailwind CSS, and Framer Motion. Showcases Yash Kapure's expertise in React.js, Node.js, MERN/MEVN, and modern product engineering practices for startups and global teams.
+Welcome!
 
----
+This is my personal portfolio website — built from scratch to showcase my journey as a Backend Developer transitioning into Full-Stack Development.
 
-## 🌐 Quick Links
-
-- Live site: [https://yashkapure.netlify.app](https://yashkapure.netlify.app)
-- Connect: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
+Instead of using a ready-made template, I wanted to create something that genuinely represents how I think, design, and build software. The goal was simple: focus less on decoration and more on demonstrating real skills and real projects.
 
 ---
 
-## 📚 Table of Contents
+Why I Built This
 
-1. [Features](#-features)
-2. [SEO Highlights](#-seo-highlights)
-3. [Tech Stack](#-tech-stack)
-4. [Getting Started](#-getting-started)
-5. [Environment Variables](#-environment-variables)
-6. [Available Scripts](#-available-scripts)
-7. [Contact](#-contact)
+Most portfolio websites look identical.
 
----
+I didn't want another copy-paste template.
 
-## ✨ Features
+This project started as an experiment while learning Next.js, but gradually evolved into a complete platform where I could present my work, experience, and technical growth in an authentic way.
 
-- Responsive portfolio optimized for Core Web Vitals.
-- Hero, skills, projects, experience, and contact sections with smooth micro-interactions.
-- AI-enhanced chatbot with OpenRouter + Exa for semantic search and replies.
-- Automated email delivery powered by Resend and react-hook-form validation.
-- SEO-ready: dynamic Open Graph tags, sitemap generation, structured data.
-- Accessible UI following WCAG 2.1 AA guidelines.
+It reflects:
+
+My learning process
+My coding style  
+My design decisions
+And most importantly — what I can actually build
 
 ---
 
-## 🔍 SEO Highlights
+What I Learned While Building It
 
-- Descriptive metadata targeting keywords such as "Full-Stack Developer", "Next.js engineer", "React consultant", and "remote MERN developer".
-- Sitemap generated through `next-sitemap` using `SITE_URL`.
-- Pre-rendered sections and image optimization for global performance.
-- Contact CTA, social previews, and canonical URLs for improved discoverability.
+Building this portfolio taught me far more than expected:
 
----
+Next.js App Router — Understanding modern routing and layout architecture
+TypeScript — Writing safer, scalable frontend code
+Tailwind CSS — Faster styling without maintaining large CSS files
+Framer Motion — Creating smooth animations without hurting usability  
+Deployment & Production Setup — Taking a project from local development to live deployment on Vercel
 
-## 🧰 Tech Stack
-
-- Next.js 14+ with App Router
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- React Hook Form
-- Resend Email API
+Every section of this website represents hands-on experimentation and improvement.
 
 ---
 
-## ⚡ Getting Started
+Live Website
 
-Clone the repository, install dependencies, and run the development server.
+Visit Portfolio: https://saurav-portfolio-vert-seven.vercel.app
 
-```bash
+---
+
+Features
+
+Key Highlights
+
+Interactive Hero Section with animated tech elements
+Personal About Section focused on real experience
+Experience Timeline showcasing internships and contributions
+Project Showcase featuring practical applications
+Auto-scrolling Skills Section
+Fully functional Contact Form with email integration
+
+---
+
+Tech Stack
+
+This project is built using modern web technologies:
+
+Next.js 16 (App Router)
+React + TypeScript
+Tailwind CSS
+Framer Motion
+React Hook Form
+Resend Email API
+Vercel Deployment
+
+The focus was performance, simplicity, and maintainability rather than unnecessary complexity.
+
+---
+
+Run Locally
+
+If you'd like to explore or learn from the code:
+
+Requirements
+Node.js 18+
+npm or yarn
+
+Setup
+git clone https://github.com/sauravsirsat/portfolio.git
+cd portfolio
 npm install
+
+Create environment variables:
+cp .env.example .env
+Add your RESEND_API_KEY to enable the contact form.
+
+Run the project:
 npm run dev
-```
 
-Visit `http://localhost:3000` to explore the portfolio locally.
-
----
-
-## 🔐 Environment Variables
-
-Create a `.env` file in the project root:
-
-```bash
-SITE_URL='https://example.com'        # Required for sitemap generation
-RESEND_API_KEY='your_resend_api_key'  # Required for transactional email
-EXA_API_KEY='your_exa_api_key'        # Optional: powers AI search
-OPENROUTER_API_KEY='your_openrouter_api_key'  # Required for chatbot
-```
+Open: http://localhost:3000
 
 ---
 
-## 🧪 Available Scripts
+Project Structure
 
-- `npm run dev` - start development server
-- `npm run build` - create production build
-- `npm run start` - launch production server
-- `npm run lint` - run Next.js/TypeScript linters
+src/
+app/            # Next.js App Router structure
+  [locale]/   # Multi-language routing
+  api/        # Contact form API
+components/     # Reusable UI components
+hooks/          # Custom React hooks
+lib/            # Utilities & data
+styles/         # Global styling
 
 ---
 
-## 📫 Contact
+Scripts
 
-Questions, feedback, or collaboration inquiries are welcome:
+npm run dev          # Development server
+npm run build        # Production build
+npm run start        # Run production build
+npm run lint         # Code quality check
+npm run lint:fix     # Auto fix issues
+npm run typecheck    # TypeScript validation
+npm run format:write # Code formatting
 
-- Email: [yashkapure06@gmail.com](mailto:yashkapure06@gmail.com)
-- LinkedIn/GitHub links can be added in the contact section of the site.
+---
 
-Crafted with ❤️ using cutting-edge full-stack technologies to highlight Yash Kapure's global-ready engineering portfolio.
+Design Approach
+
+Visual Style
+Modern gradient color palette
+Dark mode support
+Clean and distraction-free layout
+Accessibility-aware contrast choices
+
+Animations
+Animations were added carefully to enhance interaction without overwhelming users.
+Reduced-motion support is included for better accessibility.
+
+Performance
+Optimized images
+Server-side rendering via Next.js
+Continuous improvement toward better Core Web Vitals
+
+---
+
+Deployment
+
+The website is deployed using Vercel, enabling seamless CI/CD with minimal configuration.
+
+vercel --prod
+
+---
+
+Known Improvements Ahead
+
+Further mobile responsiveness refinements
+Contact form validation enhancements
+Performance tuning for animation-heavy sections
+Continuous TypeScript cleanup
+
+---
+
+Contributions
+
+Although this is a personal project, suggestions and improvements are always welcome.
+
+Fork the repository
+Make improvements
+Submit a pull request
+
+I genuinely appreciate feedback from fellow developers.
+
+---
+
+Contact
+
+I'm currently open to Full-Time Backend / Full-Stack Developer opportunities (2025 Graduate).
+
+Email: saurav.sirsat@outlook.com  
+LinkedIn: https://linkedin.com/in/sauravsirsat  
+GitHub: https://github.com/sauravsirsat
+
+---
+
+Built with passion and modern web technologies

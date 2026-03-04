@@ -59,8 +59,8 @@ export const Contact = () => {
               className="text-muted-foreground hover:text-foreground h-fit p-0 font-medium underline transition-colors"
               asChild
             >
-              <Link href="mailto:yashkapure06@gmail.com">
-                yashkapure06@gmail.com
+              <Link href="mailto:saurav.sirsat@outlook.com">
+                saurav.sirsat@outlook.com
               </Link>
             </Button>{' '}
             {t('or')}

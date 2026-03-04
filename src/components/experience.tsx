@@ -21,15 +21,6 @@ export const Experience = () => {
     ? { duration: 0 }
     : { delay: 0.175 };
 
-  const experienceKeys = [
-    'itTutor',
-    'fullStackDragon',
-    'frontendOctane',
-    'frontendAnandlok',
-    'vueDeveloper',
-    'freelance',
-  ] as const;
-
   return (
     <motion.section
       ref={sectionRef}
@@ -41,15 +32,14 @@ export const Experience = () => {
     >
       <SectionHeading heading={t('heading')} content={t('content')} />
       <div className="relative max-w-screen-md">
-        {experiencesData.map(({ company, technologies }, index) => {
-          const key = experienceKeys[index];
+        {experiencesData.map(({ key, technologies }, index) => {
           const title = t(`items.${key}.title`);
           const description = t(`items.${key}.description`);
           const translatedCompany = t(`items.${key}.company`);
 
           return (
             <div
-              key={company}
+              key={key}
               className="not-last:pb-12 relative pl-8 [&:not(:last-child)]:pb-10"
             >
               <div className="bg-muted absolute left-0 top-2.5 h-full w-[2px] group-first:top-6 group-first:h-[calc(100%-24px)]">

@@ -11,6 +11,8 @@ export const About = () => {
   const { ref } = useSectionInView('About');
   const t = useTranslations('about');
 
+  // FIXME: Consider adding a more detailed skills breakdown or tech stack section
+
   return (
     <motion.section
       ref={ref}

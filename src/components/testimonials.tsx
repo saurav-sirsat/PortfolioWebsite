@@ -17,14 +17,6 @@ export const Testimonials = () => {
   const [touchStartX, setTouchStartX] = useState<number | null>(null);
   const [touchEndX, setTouchEndX] = useState<number | null>(null);
 
-  const testimonialKeys = [
-    'lucca',
-    'daniela',
-    'cristina',
-    'ranjeet',
-    'viraj',
-    'manisha',
-  ] as const;
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonialsData.length);
@@ -64,7 +56,7 @@ export const Testimonials = () => {
   const testimonialsStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Yash Kapure Portfolio',
+    name: 'Saurav Sirsat Portfolio',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '5',
@@ -146,7 +138,7 @@ export const Testimonials = () => {
             transition={prefersReducedMotion ? { duration: 0 } : undefined}
           >
             {testimonialsData.map((testimonial, index) => {
-              const key = testimonialKeys[index];
+              const key = testimonial.key;
               const translatedContent = t(`items.${key}.content`);
               const translatedName = t(`items.${key}.name`);
               const translatedPosition = t(`items.${key}.position`);
@@ -238,11 +230,10 @@ export const Testimonials = () => {
             <button
               key={index}
               onClick={() => goToTestimonial(index)}
-              className={`focus-visible:ring-primary size-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 sm:size-3 md:size-3.5 lg:size-4 ${
-                index === currentIndex
-                  ? 'bg-primary'
-                  : 'bg-muted hover:bg-muted/80'
-              }`}
+              className={`focus-visible:ring-primary size-2.5 rounded-full transition-all focus-visible:outline-none focus-visible:ring-2 sm:size-3 md:size-3.5 lg:size-4 ${index === currentIndex
+                ? 'bg-primary'
+                : 'bg-muted hover:bg-muted/80'
+                }`}
               aria-label={`Go to testimonial ${index + 1}`}
               aria-current={index === currentIndex}
             />

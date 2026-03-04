@@ -26,38 +26,8 @@ export const Projects = () => {
     : { opacity: 0, y: 20 };
   const ctaTransition = prefersReducedMotion ? { duration: 0 } : { delay: 0.3 };
 
-  // Show only first 2 projects
+  // Show only first 4 projects
   const featuredProjects = projectsData.slice(0, 4);
-
-  // Map project titles to translation keys
-  const projectKeyMap: Record<string, string> = {
-    'Calm Llama - AI Chatbot': 'calmLlama',
-    'Mini Otio - AI Research Assistant': 'miniOtio',
-    'EC2 Cloud Cost Analyzer': 'ec2Analyzer',
-    'Online Interview Assessment System (OIAS)': 'oias',
-    'Dragon Sino Group': 'dragonSino',
-    'Netflix Clone using ReactJs': 'netflixClone',
-    'Shangrila Petition Platform': 'shangrila',
-    'Earthly Internship': 'earthly',
-    'The Kolorado Paints': 'kolorado',
-    TechnoKraft: 'technokraft',
-    'BEST GST Course': 'bestGst',
-    'Affinix Digital': 'affinix',
-    'Octane Apps': 'octaneApps',
-    "Dr. Manisha's Yoga Institute": 'yogaInstitute',
-    'Anandlok Ayurveda': 'anandlok',
-    'News-o-Pedia': 'newspedia',
-    'Select Text to Speech Chrome extention': 'textToSpeech',
-    'Restro - A Restaurent Website': 'restro',
-    'OpenSource Contribution in Chakra-UI': 'chakraUI',
-    'YouTube Clone using ReactJs': 'youtubeClone',
-    'Blogging Website': 'blogging',
-    'Personal Portfolio': 'portfolio1',
-    'Space Talks ✨': 'spaceTalks',
-    'Movie WebApp': 'movieApp',
-    'Complete React Website': 'reactWebsite',
-    'Wedding Invitation Website': 'wedding',
-  };
 
   return (
     <section id="projects" className="my-10 scroll-mt-28 md:mb-20">
@@ -73,18 +43,19 @@ export const Projects = () => {
       </div>
       <div className="grid grid-cols-1 gap-7 md:grid-cols-2">
         {featuredProjects.map((project, index) => {
-          const projectKey = projectKeyMap[project.title];
+          const projectData = project as typeof projectsData[number];
+          const projectKey = 'key' in projectData ? projectData.key : null;
           const translatedTitle = projectKey
             ? t(`items.${projectKey}.title`)
-            : project.title;
+            : 'title' in projectData ? projectData.title : '';
           const translatedDescription = projectKey
             ? t(`items.${projectKey}.description`)
-            : project.description;
+            : 'description' in projectData ? projectData.description : '';
 
           return (
             <Project
-              key={project.title}
-              project={project}
+              key={projectData.title}
+              project={projectData}
               index={index}
               translatedTitle={translatedTitle}
               translatedDescription={translatedDescription}
