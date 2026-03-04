@@ -1,184 +1,179 @@
-Saurav Sirsat — Portfolio
+<h1 align="center">🚀 Saurav Sirsat — Developer Portfolio</h1>
 
-Welcome!
+<p align="center">
+Backend Developer → Full-Stack Engineer <br/>
+Building scalable software • Learning continuously • Shipping real products
+</p>
 
-This is my personal portfolio website — built from scratch to showcase my journey as a Backend Developer transitioning into Full-Stack Development.
-
-Instead of using a ready-made template, I wanted to create something that genuinely represents how I think, design, and build software. The goal was simple: focus less on decoration and more on demonstrating real skills and real projects.
-
----
-
-Why I Built This
-
-Most portfolio websites look identical.
-
-I didn't want another copy-paste template.
-
-This project started as an experiment while learning Next.js, but gradually evolved into a complete platform where I could present my work, experience, and technical growth in an authentic way.
-
-It reflects:
-
-My learning process
-My coding style  
-My design decisions
-And most importantly — what I can actually build
+<p align="center">
+<a href="https://saurav-portfolio-vert-seven.vercel.app">
+<img src="https://img.shields.io/badge/Live%20Portfolio-Visit%20Website-0ea5e9?style=for-the-badge&logo=vercel&logoColor=white"/>
+</a>
+<a href="https://github.com/sauravsirsat">
+<img src="https://img.shields.io/badge/GitHub-Profile-181717?style=for-the-badge&logo=github"/>
+</a>
+<a href="https://linkedin.com/in/sauravsirsat">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin"/>
+</a>
+</p>
 
 ---
 
-What I Learned While Building It
+## ✨ About This Project
 
-Building this portfolio taught me far more than expected:
+This repository contains my personal portfolio website built completely from scratch to showcase my journey as a Backend Developer transitioning into Full-Stack Development.
 
-Next.js App Router — Understanding modern routing and layout architecture
-TypeScript — Writing safer, scalable frontend code
-Tailwind CSS — Faster styling without maintaining large CSS files
-Framer Motion — Creating smooth animations without hurting usability  
-Deployment & Production Setup — Taking a project from local development to live deployment on Vercel
+Instead of using templates, I wanted to build something that genuinely represents how I design, structure, and develop software systems. The portfolio focuses on demonstrating real engineering ability rather than visual decoration.
 
-Every section of this website represents hands-on experimentation and improvement.
+Every section of this project reflects hands-on learning, experimentation, and continuous improvement.
 
 ---
 
-Live Website
+## 🎯 Why I Built This
 
-Visit Portfolio: https://saurav-portfolio-vert-seven.vercel.app
+While preparing for developer roles, I noticed that many portfolios look similar and mainly showcase technologies instead of actual development capability.
 
----
+I wanted my portfolio to clearly answer one question:
 
-Features
+**What can this developer actually build?**
 
-Key Highlights
-
-Interactive Hero Section with animated tech elements
-Personal About Section focused on real experience
-Experience Timeline showcasing internships and contributions
-Project Showcase featuring practical applications
-Auto-scrolling Skills Section
-Fully functional Contact Form with email integration
+This project started as a learning experiment while exploring modern web technologies and gradually evolved into a production-ready application representing my technical growth and development mindset.
 
 ---
 
-Tech Stack
+## 🌐 Live Website
 
-This project is built using modern web technologies:
-
-Next.js 16 (App Router)
-React + TypeScript
-Tailwind CSS
-Framer Motion
-React Hook Form
-Resend Email API
-Vercel Deployment
-
-The focus was performance, simplicity, and maintainability rather than unnecessary complexity.
+👉 https://saurav-portfolio-vert-seven.vercel.app
 
 ---
 
-Run Locally
+## 🚀 Key Features
 
-If you'd like to explore or learn from the code:
+• Interactive hero section with smooth animations  
+• Professional experience timeline  
+• Project showcase with real applications  
+• Auto-scrolling skills section  
+• Functional contact form with backend integration  
+• Dark mode support  
+• Fully responsive layout  
+• Performance-focused implementation  
 
-Requirements
-Node.js 18+
-npm or yarn
+---
 
-Setup
-git clone https://github.com/saurav-sirsat/portfolio.git
-cd portfolio
-npm install
+## 🧰 Tech Stack
+
+### Frontend
+Next.js (App Router)  
+React  
+TypeScript  
+Tailwind CSS  
+Framer Motion  
+
+### Backend & Integration
+Next.js API Routes  
+React Hook Form  
+Resend Email API  
+
+### Deployment
+Vercel CI/CD Deployment  
+
+---
+
+## 🏗️ Engineering Approach
+
+### Architecture
+The application follows a modular component-driven structure separating UI components, business logic, utilities, and API functionality to ensure scalability and maintainability.
+
+### Design Philosophy
+The design intentionally avoids clutter. Animations and styling are added only where they improve usability and interaction rather than acting as decoration.
+
+### Performance
+Server-side rendering using Next.js  
+Optimized assets and loading behavior  
+Continuous improvement toward Core Web Vitals  
+
+---
+
+## ⚙️ Run Locally
+
+Requirements:
+Node.js 18+  
+npm or yarn  
+
+Clone repository:
+
+git clone https://github.com/sauravsirsat/portfolio.git  
+cd portfolio  
+npm install  
 
 Create environment variables:
-cp .env.example .env
-Add your RESEND_API_KEY to enable the contact form.
 
-Run the project:
-npm run dev
+cp .env.example .env  
 
-Open: http://localhost:3000
+Add your RESEND_API_KEY.
 
----
+Run development server:
 
-Project Structure
+npm run dev  
 
-src/
-app/            # Next.js App Router structure
-  [locale]/   # Multi-language routing
-  api/        # Contact form API
-components/     # Reusable UI components
-hooks/          # Custom React hooks
-lib/            # Utilities & data
-styles/         # Global styling
+Open browser:
+http://localhost:3000
 
 ---
 
-Scripts
+## 📁 Project Structure
 
-npm run dev          # Development server
-npm run build        # Production build
-npm run start        # Run production build
-npm run lint         # Code quality check
-npm run lint:fix     # Auto fix issues
-npm run typecheck    # TypeScript validation
-npm run format:write # Code formatting
-
----
-
-Design Approach
-
-Visual Style
-Modern gradient color palette
-Dark mode support
-Clean and distraction-free layout
-Accessibility-aware contrast choices
-
-Animations
-Animations were added carefully to enhance interaction without overwhelming users.
-Reduced-motion support is included for better accessibility.
-
-Performance
-Optimized images
-Server-side rendering via Next.js
-Continuous improvement toward better Core Web Vitals
+src/  
+ ├── app/ — Routing & API endpoints  
+ ├── components/ — Reusable UI components  
+ ├── hooks/ — Custom React hooks  
+ ├── lib/ — Utilities & configuration  
+ └── styles/ — Global styling  
 
 ---
 
-Deployment
+## 📜 Scripts
 
-The website is deployed using Vercel, enabling seamless CI/CD with minimal configuration.
+npm run dev — Start development server  
+npm run build — Production build  
+npm run start — Run production build  
+npm run lint — Code quality checks  
+npm run typecheck — Type validation  
+npm run format:write — Format code  
+
+---
+
+## 🚀 Deployment
+
+The portfolio is deployed using Vercel with seamless CI/CD integration.
 
 vercel --prod
 
 ---
 
-Known Improvements Ahead
+## 🔮 Future Improvements
 
-Further mobile responsiveness refinements
-Contact form validation enhancements
-Performance tuning for animation-heavy sections
-Continuous TypeScript cleanup
-
----
-
-Contributions
-
-Although this is a personal project, suggestions and improvements are always welcome.
-
-Fork the repository
-Make improvements
-Submit a pull request
-
-I genuinely appreciate feedback from fellow developers.
+• Enhanced mobile responsiveness  
+• Improved form validation  
+• Animation performance optimization  
+• Continuous TypeScript refinement  
 
 ---
 
-Contact
+## 💼 Open to Opportunities
 
-I'm currently open to Full-Time Backend / Full-Stack Developer opportunities (2025 Graduate).
+I am currently open to **Backend Developer / Full-Stack Developer roles (2025 Graduate)** where I can contribute to real-world systems and continue growing as an engineer.
+
+---
+
+## 📬 Contact
 
 Email: saurav.sirsat@outlook.com  
-LinkedIn: https://linkedin.com/in/saurav-sirsat  
-GitHub: https://github.com/saurav-sirsat
+LinkedIn: https://linkedin.com/in/sauravsirsat  
+GitHub: https://github.com/sauravsirsat  
 
 ---
 
-Built with passion and modern web technologies
+<p align="center">
+Built with curiosity, consistency, and passion for building meaningful software ❤️
+</p>
